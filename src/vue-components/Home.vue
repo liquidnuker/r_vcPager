@@ -2,10 +2,17 @@
   <div>
     <vcPager1 
     :pr-data="items" />
+    <br>
+    <br>
+    <vcPager2
+    :pr-data="items" />
+
   </div>
 </template>
 <script>
 const vcPager1 = () => import ('./vcPager1.vue');
+const vcPager2 = () => import ('./vcPager2.vue');
+
   export default {
     data () {
       return {    
@@ -13,7 +20,8 @@ const vcPager1 = () => import ('./vcPager1.vue');
       }
     },
     components: {
-      vcPager1: vcPager1
+      vcPager1: vcPager1,
+      vcPager2: vcPager2
     },
     mounted: function () {
       this.generateTempData();
