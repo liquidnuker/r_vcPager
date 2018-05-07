@@ -533,6 +533,14 @@ body {
 }
 @include jspager3_theme();
 
+.jspager3_items {
+  > li {
+    display: inline-block;
+    color: #ccc;
+    background-color: #000;
+  }
+}
+
 .jspager3_holder {
   @extend %text--center;
 }

@@ -1,4 +1,4 @@
-webpackJsonp([4],[
+webpackJsonp([5],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -1021,20 +1021,15 @@ module.exports = function(it){
 /* 64 */,
 /* 65 */,
 /* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(73)
+var __vue_script__ = __webpack_require__(68)
 /* template */
-var __vue_template__ = __webpack_require__(74)
+var __vue_template__ = __webpack_require__(69)
 /* styles */
 var __vue_styles__ = null
 /* scopeId */
@@ -1048,9 +1043,9 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "vue-components\\vcPager3.vue"
+Component.options.__file = "vue-components\\vcPager2.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] vcPager3.vue: functional components are not supported with templates, they should use render functions.")}
+if (Component.options.functional) {console.error("[vue-loader] vcPager2.vue: functional components are not supported with templates, they should use render functions.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -1059,9 +1054,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-22edb0a6", Component.options)
+    hotAPI.createRecord("data-v-22df9925", Component.options)
   } else {
-    hotAPI.reload("data-v-22edb0a6", Component.options)
+    hotAPI.reload("data-v-22df9925", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -1072,7 +1067,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 73 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1090,11 +1085,6 @@ var _pagebtns = __webpack_require__(32);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//
-//
-//
-//
-//
 //
 //
 //
@@ -1261,75 +1251,33 @@ exports.default = {
 };
 
 /***/ }),
-/* 74 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
-    staticClass: "jspager3_holder"
+    staticClass: "jspager2_holder"
   }, [_c('ul', {
-    staticClass: "row jspager3_items",
+    staticClass: "row jspager2_items",
     attrs: {
-      "id": "jspager3_items",
+      "id": "jspager2_items",
       "aria-atomic": "true",
       "aria-live": "assertive",
       "aria-relevant": "all"
     }
   }, _vm._l((_vm.itemList), function(i) {
-    return _c('li', [_vm._v("\r\n        " + _vm._s(i) + "\r\n      ")])
+    return _c('li', [_vm._v("\r\n      " + _vm._s(i) + "\r\n      ")])
   })), _vm._v(" "), _c('nav', {
-    staticClass: "jspager3"
+    staticClass: "jspager2"
   }, [_c('aside', {
-    staticClass: "jspager3_prevnextholder"
-  }, [_c('button', {
-    staticClass: "btn btn_first",
-    attrs: {
-      "id": "jspager3_first",
-      "tabindex": "0"
-    },
-    on: {
-      "click": function($event) {
-        _vm.showItems(1)
-      }
-    }
-  }, [_c('svg', {
-    attrs: {
-      "xmlns": "http://www.w3.org/2000/svg",
-      "viewBox": "0 0 24 24"
-    }
-  }, [_c('path', {
-    attrs: {
-      "d": "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-    }
-  })]), _vm._v(" "), _c('span', [_vm._v("First")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn_prev",
-    attrs: {
-      "id": "jspager3_prev",
-      "tabindex": "0"
-    },
-    on: {
-      "click": function($event) {
-        _vm.flip()
-      }
-    }
-  }, [_c('svg', {
-    attrs: {
-      "xmlns": "http://www.w3.org/2000/svg",
-      "viewBox": "0 0 24 24"
-    }
-  }, [_c('path', {
-    attrs: {
-      "d": "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-    }
-  })]), _vm._v(" "), _c('span', [_vm._v("Prev")])])]), _vm._v(" "), _c('aside', {
-    staticClass: "jspager3_totalpagesholder"
+    staticClass: "jspager2_totalpagesholder"
   }, [_c('label', {
     attrs: {
-      "for": "jspager3_select"
+      "for": "jspager2_select"
     }
   }, [_vm._v("Page:")]), _vm._v(" "), _c('p', {
     attrs: {
-      "id": "jspager3_currentpage"
+      "id": "jspager2_currentpage"
     }
   }), _vm._v(" "), _c('select', {
     directives: [{
@@ -1338,10 +1286,10 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       value: (_vm.currentPage),
       expression: "currentPage"
     }],
-    staticClass: "jspager3_select",
+    staticClass: "jspager2_select",
     attrs: {
-      "id": "jspager3_select",
-      "name": "jspager3_select",
+      "id": "jspager2_select",
+      "name": "jspager2_select",
       "tabindex": "0"
     },
     on: {
@@ -1365,14 +1313,54 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     }, [_vm._v(_vm._s(i))])
   })), _vm._v(" "), _c('p', {
     attrs: {
-      "id": "jspager3_totalpages"
+      "id": "jspager2_totalpages"
     }
   }, [_vm._v("of " + _vm._s(_vm.totalPages))])]), _vm._v(" "), _c('aside', {
-    staticClass: "jspager3_prevnextholder"
+    staticClass: "jspager2_prevnextholder"
   }, [_c('button', {
+    staticClass: "btn btn_first",
+    attrs: {
+      "id": "jspager2_first",
+      "tabindex": "0"
+    },
+    on: {
+      "click": function($event) {
+        _vm.showItems(1)
+      }
+    }
+  }, [_c('svg', {
+    attrs: {
+      "xmlns": "http://www.w3.org/2000/svg",
+      "viewBox": "0 0 24 24"
+    }
+  }, [_c('path', {
+    attrs: {
+      "d": "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+    }
+  })]), _vm._v(" "), _c('span', [_vm._v("First")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn_prev",
+    attrs: {
+      "id": "jspager2_prev",
+      "tabindex": "0"
+    },
+    on: {
+      "click": function($event) {
+        _vm.flip()
+      }
+    }
+  }, [_c('svg', {
+    attrs: {
+      "xmlns": "http://www.w3.org/2000/svg",
+      "viewBox": "0 0 24 24"
+    }
+  }, [_c('path', {
+    attrs: {
+      "d": "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+    }
+  })]), _vm._v(" "), _c('span', [_vm._v("Prev")])]), _vm._v(" "), _c('button', {
     staticClass: "btn btn_next",
     attrs: {
-      "id": "jspager3_next",
+      "id": "jspager2_next",
       "tabindex": "0"
     },
     on: {
@@ -1392,7 +1380,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   })])]), _vm._v(" "), _c('button', {
     staticClass: "btn btn_last",
     attrs: {
-      "id": "jspager3_last",
+      "id": "jspager2_last",
       "tabindex": "0"
     },
     on: {
@@ -1410,16 +1398,16 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "d": "M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
     }
   })])])]), _vm._v(" "), _c('aside', {
-    staticClass: "jspager3_pagebtnholder",
+    staticClass: "jspager2_pagebtnholder",
     attrs: {
-      "id": "jspager3_pagebtnholder",
+      "id": "jspager2_pagebtnholder",
       "aria-atomic": "true",
       "aria-live": "polite",
       "aria-relevant": "additions"
     }
   }, [_vm._l((_vm.buttonSet), function(i, index) {
     return [(i === _vm.currentPage) ? _c('a', {
-      staticClass: "jspager3_pagebtn jspager3_pagebtn--active",
+      staticClass: "jspager2_pagebtn jspager2_pagebtn--active",
       attrs: {
         "tabindex": "0",
         "aria-posinset": _vm.currentPage,
@@ -1431,7 +1419,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
         }
       }
     }, [_vm._v(_vm._s(i))]) : _c('a', {
-      staticClass: "jspager3_pagebtn",
+      staticClass: "jspager2_pagebtn",
       attrs: {
         "tabindex": "0",
         "aria-posinset": index + 1
@@ -1441,12 +1429,12 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
           _vm.showItems(i)
         }
       }
-    }, [_vm._v("\r\n          " + _vm._s(i) + "\r\n        ")])]
+    }, [_vm._v("\r\n            " + _vm._s(i) + "\r\n          ")])]
   })], 2), _vm._v(" "), _c('aside', {
-    staticClass: "jspager3_perpageholder"
+    staticClass: "jspager2_perpageholder"
   }, [_c('label', {
     attrs: {
-      "for": "jspager3_perpage"
+      "for": "jspager2_perpage"
     }
   }, [_vm._v("perPage: ")]), _vm._v(" "), _c('select', {
     directives: [{
@@ -1455,10 +1443,10 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       value: (_vm.perPage),
       expression: "perPage"
     }],
-    staticClass: "jspager3_perpage",
+    staticClass: "jspager2_perpage",
     attrs: {
-      "id": "jspager3_perpage",
-      "name": "jspager3_perpage",
+      "id": "jspager2_perpage",
+      "name": "jspager2_perpage",
       "tabindex": "0"
     },
     on: {
@@ -1488,7 +1476,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-22edb0a6", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-22df9925", module.exports)
   }
 }
 
