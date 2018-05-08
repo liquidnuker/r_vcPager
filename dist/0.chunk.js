@@ -28,18 +28,25 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
 
 var vcPager1 = function vcPager1() {
-  return __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 64));
+  return __webpack_require__.e/* import() */(10).then(__webpack_require__.bind(null, 64));
 };
 var vcPager2 = function vcPager2() {
-  return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 67));
+  return __webpack_require__.e/* import() */(9).then(__webpack_require__.bind(null, 67));
 };
 var vcPager3 = function vcPager3() {
-  return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 70));
+  return __webpack_require__.e/* import() */(8).then(__webpack_require__.bind(null, 70));
 };
 var vcPager4 = function vcPager4() {
-  return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 73));
+  return __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, 73));
+};
+var vcPager5 = function vcPager5() {
+  return __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 78));
 };
 
 exports.default = {
@@ -53,7 +60,8 @@ exports.default = {
     vcPager1: vcPager1,
     vcPager2: vcPager2,
     vcPager3: vcPager3,
-    vcPager4: vcPager4
+    vcPager4: vcPager4,
+    vcPager5: vcPager5
   },
   mounted: function mounted() {
     this.generateTempData();
@@ -133,6 +141,10 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "pr-data": _vm.items
     }
   }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('vcPager4', {
+    attrs: {
+      "pr-data": _vm.items
+    }
+  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('vcPager5', {
     attrs: {
       "pr-data": _vm.items
     }

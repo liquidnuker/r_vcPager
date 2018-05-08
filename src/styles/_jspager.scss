@@ -915,6 +915,13 @@ body {
 }
 @include jspager5_theme();
 
+.jspager5_items {
+  > li {
+    display: inline-block;
+    background-color: #000;
+  }
+}
+
 .jspager5_holder {
   @extend %text--center;
 }
