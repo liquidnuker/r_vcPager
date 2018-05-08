@@ -1232,7 +1232,6 @@ exports.default = {
       this.changePageBtns();
     },
     changePerPage: function changePerPage(perPage) {
-      console.log(perPage);
       this.perPage = perPage;
       this.activatePager();
     },
@@ -1310,7 +1309,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
         });
         _vm.currentPage = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
       }, function($event) {
-        _vm.showItems($event.target.value)
+        _vm.pageJump($event.target.value)
       }]
     }
   }, _vm._l((_vm.totalPages), function(i) {

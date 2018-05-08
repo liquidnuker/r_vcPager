@@ -94,7 +94,7 @@ export default {
       buttonSet: "",
 
       toPage: ""
-    }
+    };
   },
   watch: {
   // : function () {
@@ -117,18 +117,13 @@ export default {
         data: this.items
       });
       this.totalPages = this.pg.getTotalPages();
-      
-      this.setPageBtns();
       this.showItems(1);
     },
     showItems: function(num) {
       this.itemList = this.pg.page(num);
       this.currentPage = this.pg.currentPage;
-
-      this.changePageBtns();
     },
     changePerPage: function(perPage) {
-      console.log(perPage);
       this.perPage = perPage;
       this.activatePager();
     },
@@ -139,18 +134,6 @@ export default {
         this.showItems(this.pg.prev());
       }
     },
-    setPageBtns: function() {
-      this.temp = [];
-      for (let i = 0, l = this.pg.getTotalPages(); i < l; i++) {
-        this.temp.push(pageBtns(i, l));
-      }
-    },
-    changePageBtns: function() {
-      this.buttonSet = this.temp[this.pg.currentPage - 1];
-    },
-    pageJump: function(page) {
-      this.showItems(Number(page));
-    }     
   }
-}
+};
 </script>

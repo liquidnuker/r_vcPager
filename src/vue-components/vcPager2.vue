@@ -18,7 +18,7 @@
         <label for="jspager2_select">Page:</label>
         <p id="jspager2_currentpage"></p>
         <select id="jspager2_select" name="jspager2_select" class="jspager2_select" tabindex="0" v-model="currentPage" 
-      @change="showItems($event.target.value)">
+      @change="showItems(Number($event.target.value))">
         <option v-for="i in totalPages" :value="i">{{ i }}</option>
       </select>
         <p id="jspager2_totalpages">of {{ totalPages }}</p>
@@ -108,7 +108,7 @@ export default {
       buttonSet: "",
 
       toPage: ""
-    }
+    };
   },
   watch: {
   // : function () {
@@ -142,7 +142,6 @@ export default {
       this.changePageBtns();
     },
     changePerPage: function(perPage) {
-      console.log(perPage);
       this.perPage = perPage;
       this.activatePager();
     },
@@ -162,9 +161,6 @@ export default {
     changePageBtns: function() {
       this.buttonSet = this.temp[this.pg.currentPage - 1];
     },
-    pageJump: function(page) {
-      this.showItems(Number(page));
-    }     
   }
-}
+};
 </script>

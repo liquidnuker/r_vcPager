@@ -1205,18 +1205,13 @@ exports.default = {
         data: this.items
       });
       this.totalPages = this.pg.getTotalPages();
-
-      this.setPageBtns();
       this.showItems(1);
     },
     showItems: function showItems(num) {
       this.itemList = this.pg.page(num);
       this.currentPage = this.pg.currentPage;
-
-      this.changePageBtns();
     },
     changePerPage: function changePerPage(perPage) {
-      console.log(perPage);
       this.perPage = perPage;
       this.activatePager();
     },
@@ -1226,18 +1221,6 @@ exports.default = {
       } else {
         this.showItems(this.pg.prev());
       }
-    },
-    setPageBtns: function setPageBtns() {
-      this.temp = [];
-      for (var i = 0, l = this.pg.getTotalPages(); i < l; i++) {
-        this.temp.push((0, _pagebtns.pageBtns)(i, l));
-      }
-    },
-    changePageBtns: function changePageBtns() {
-      this.buttonSet = this.temp[this.pg.currentPage - 1];
-    },
-    pageJump: function pageJump(page) {
-      this.showItems(Number(page));
     }
   }
 };
